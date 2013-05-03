@@ -1,0 +1,3 @@
+{"ts":1367520967781,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"class Product\n  include Mongoid::Document\n  field :name, type: String\n  field :price, type: BigDecimal\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":107}]],"length":107}
+{"contributors":[],"silentsave":false,"ts":1367583672891,"patch":[[{"diffs":[[0,"Decimal\n"],[1,"  field :released_on, type: Date\n"],[0,"end\n"]],"start1":95,"start2":95,"length1":12,"length2":45}]],"length":140,"saved":false}
+{"ts":1367583766346,"patch":[[{"diffs":[[0,"e: Date\n"],[1,"  \n  attr_accessible :name, :price, :released_on\n  validates_presence_of :name\n"],[0,"end\n"]],"start1":128,"start2":128,"length1":12,"length2":91}]],"length":219,"saved":false}

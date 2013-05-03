@@ -1,0 +1,1045 @@
+
+
+Started GET "/assets/rails.png" for 127.12.208.1 at 2013-05-02 14:56:56 -0400
+Served asset /rails.png - 200 OK (15ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 14:57:03 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (114.3909ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6529ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2645ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3303ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (5.3782ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (6.3188ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1517ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.9728ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0602ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1038ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (4.8144ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6107ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (4.9393ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0823ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7950ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5132ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (60.0498ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2588ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3186ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3968ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3930ms)
+  Rendered products/index.html.erb within layouts/application (5408.6ms)
+Completed 500 Internal Server Error in 5425ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___832486148343034559_34270640'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (61.7ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 15:05:32 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (75.6786ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (46.1409ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.9414ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3761ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.5684ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0673ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2793ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1787ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2736ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1546ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.7474ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0373ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1498ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.7834ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3985ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0010ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (9.6254ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (9.3741ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1293ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6631ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (36.4854ms)
+  Rendered products/index.html.erb within layouts/application (5286.3ms)
+Completed 500 Internal Server Error in 5401ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___955084167375929837_24228420'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 15:42:32 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (134.0551ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9531ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9619ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9767ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (192.8344ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3434ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (68.7160ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1818ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2926ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1439ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.9645ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2500ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1942ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3026ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4073ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2116ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1029ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5086ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1217ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2628ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2361ms)
+  Rendered products/index.html.erb within layouts/application (5495.4ms)
+Completed 500 Internal Server Error in 5498ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___955084167375929837_24228420'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.7ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 15:43:23 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.9604ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (29.5031ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3780ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4827ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3251ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3034ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9228ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2848ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4922ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0635ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9009ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0735ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.8809ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9739ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3177ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1224ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7127ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9119ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0444ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1143ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (100.3358ms)
+  Rendered products/index.html.erb within layouts/application (5282.5ms)
+Completed 500 Internal Server Error in 5401ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___2911590339325695300_27034680'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (82.5ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 15:46:54 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7435ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (31.0812ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5172ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1343ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2955ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0633ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2521ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2314ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0945ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2399ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.8728ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1987ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1231ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0850ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9627ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0692ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0566ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0268ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (10.9608ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (142.3151ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (49.9783ms)
+  Rendered products/index.html.erb within layouts/application (5299.7ms)
+Completed 500 Internal Server Error in 5489ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___2344129238800652330_33691560'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (83.0ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 15:47:27 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7254ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (45.4619ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2471ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1558ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0750ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1498ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4195ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2972ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4312ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3744ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4760ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2497ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3301ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2924ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3587ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9088ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9581ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9269ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0795ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2855ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (99.5138ms)
+  Rendered products/index.html.erb within layouts/application (5283.7ms)
+Completed 500 Internal Server Error in 5400ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___3214936411309667573_24512440'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (84.1ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:01:21 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7616ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9271ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1811ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.5307ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.8186ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0058ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (44.1399ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6267ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.8110ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (10.4096ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (4.1506ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5866ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (4.3504ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7263ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2473ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.7746ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5713ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0382ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6031ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (6.4003ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (40.9470ms)
+  Rendered products/index.html.erb within layouts/application (5163.9ms)
+Completed 500 Internal Server Error in 5167ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___3214936411309667573_24512440'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:02:06 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (47.0822ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.0320ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5430ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (148.4013ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.7014ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7735ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7468ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (42.7413ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (56.3705ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (4.2684ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (122.5543ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (45.4106ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (7.4077ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1319ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6276ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0666ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1667ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1737ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1408ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (88.9874ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4171ms)
+  Rendered products/index.html.erb within layouts/application (5801.0ms)
+Completed 500 Internal Server Error in 5804ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___3214936411309667573_24512440'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.1ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:03:08 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (72.3372ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (124.7623ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (24.9996ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.7916ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.7795ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (6.7732ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (6.4929ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (19.0315ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.5172ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.3456ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.6572ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.1677ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (17.7441ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.9604ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.0080ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (5.1513ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.5501ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (2.5115ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (3.4003ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (3.0196ms)
+  MOPED: 127.0.0.1:28017 COMMAND      database=admin command={:ismaster=>1} (379.8225ms)
+  Rendered products/index.html.erb within layouts/application (6083.1ms)
+Completed 500 Internal Server Error in 6273ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:28017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb___3706042103384014928_31746120'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (115.8ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:04:43 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16004.3921ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16027.6997ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16054.2047ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16095.0902ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16038.0430ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (15968.1575ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16010.6332ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16023.4044ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16013.5109ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16003.0532ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (16004.2024ms)
+  MOPED: 127.12.208.1:28017 COMMAND      database=admin command={:ismaster=>1} (11544.2846ms)
+  Rendered products/index.html.erb within layouts/application (190558.7ms)
+Completed   in 190747ms
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:12:46 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (6.4607ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (33.9050ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (20.1330ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.7592ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (6.7532ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.8865ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (55.9902ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (3.1731ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (4.9989ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (141.5441ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.6045ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.1274ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.5253ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.1563ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.5196ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.9571ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.5368ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (3.1390ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.1718ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.4726ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (33.8135ms)
+  Rendered products/index.html.erb within layouts/application (5421.8ms)
+Completed 500 Internal Server Error in 5618ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="10.110.45.196:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb__3865314564399591275_22629040'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (72.7ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (85.1ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:13:26 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.9430ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.0072ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.6343ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (9.5227ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.1787ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.0010ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.5752ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (270.3969ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.4447ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.3396ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.3515ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (3.0882ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (87.5592ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.6093ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.2299ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.1806ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.7540ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (3.3040ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (12.0211ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.4512ms)
+  MOPED: 10.110.45.196:27017 COMMAND      database=admin command={:ismaster=>1} (2.1486ms)
+  Rendered products/index.html.erb within layouts/application (5504.3ms)
+Completed 500 Internal Server Error in 5508ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="10.110.45.196:27017">]>):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @products.each do |product| %>
+    13:   <tr>
+    14:     <td><%= product.name %></td>
+    15:     <td><%= product.price %></td>
+  app/views/products/index.html.erb:12:in `_app_views_products_index_html_erb__3865314564399591275_22629040'
+  app/controllers/products_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.2ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:14:16 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3432ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4227ms)
+  Rendered products/index.html.erb within layouts/application (10.0ms)
+Compiled products.css  (118ms)  (pid 24627)
+Compiled scaffolds.css  (88ms)  (pid 24627)
+Compiled application.css  (397ms)  (pid 24627)
+Compiled jquery.js  (2ms)  (pid 24627)
+Compiled jquery_ujs.js  (0ms)  (pid 24627)
+Compiled products.js  (801ms)  (pid 24627)
+Compiled application.js  (1199ms)  (pid 24627)
+Completed 200 OK in 2510ms (Views: 2509.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-02 16:14:19 -0400
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-02 16:14:19 -0400
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-02 16:14:19 -0400
+Served asset /products.js - 200 OK (2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-02 16:14:19 -0400
+Served asset /products.css - 200 OK (75ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-02 16:14:19 -0400
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-02 16:14:19 -0400
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-02 16:14:19 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/products/new" for 127.12.208.1 at 2013-05-02 16:14:28 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (12.8ms)
+  Rendered products/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 229ms (Views: 228.2ms)
+
+
+Started POST "/products" for 127.12.208.1 at 2013-05-02 16:14:46 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tSjFsReSLOJrAPPOrlR7ldUHZy4FpB6VhrXTStax6fA=", "product"=>{"name"=>"ipod", "price"=>"50"}, "commit"=>"Create Product"}
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5058ms)
+  MOPED: 127.12.208.1:27017 INSERT       database=store_development collection=products documents=[{"_id"=>"5182c93624fbb67beb000001", "name"=>"ipod", "price"=>"50"}] flags=[] (0.2215ms)
+Redirected to http://project-livec9dd3d3c2a15.rhcloud.com/products/5182c93624fbb67beb000001
+Completed 302 Found in 9ms
+
+
+Started GET "/products/5182c93624fbb67beb000001" for 127.12.208.1 at 2013-05-02 16:14:46 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5182c93624fbb67beb000001"}
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (7.0343ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"_id"=>"5182c93624fbb67beb000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (2.9240ms)
+  Rendered products/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 108ms (Views: 94.1ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-02 16:14:47 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2163ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3424ms)
+  Rendered products/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 135ms (Views: 134.1ms)
+
+
+Started GET "/products/new" for 127.12.208.1 at 2013-05-03 08:20:49 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (386.9ms)
+  Rendered products/new.html.erb within layouts/application (523.6ms)
+Completed 500 Internal Server Error in 1107ms
+
+ActionView::Template::Error (undefined method `released_on' for #<Product:0x007fcb60664328>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :released_on %><br />
+    24:     <%= f.text_field :released_on %>
+    25:   </div>
+    26:   
+    27:   <div class="actions">
+  app/views/products/_form.html.erb:24:in `block in _app_views_products__form_html_erb__3629204901615231287_21553620'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb__3629204901615231287_21553620'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb___540605829230204249_20479220'
+  app/controllers/products_controller.rb:29:in `new'
+
+
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (43.9ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/stickshift/517bd749e0b8cd4e3000014e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (154.8ms)
+
+
+Started GET "/products/new" for 127.12.208.1 at 2013-05-03 08:21:12 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.9ms)
+  Rendered products/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 401ms (Views: 399.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:21:14 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:21:14 -0400
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:21:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:21:14 -0400
+Served asset /products.js - 304 Not Modified (79ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:21:14 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:21:14 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:21:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/products/new" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (4.4ms)
+  Rendered products/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 207ms (Views: 206.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Served asset /jquery.js - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:22:58 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/products" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tSjFsReSLOJrAPPOrlR7ldUHZy4FpB6VhrXTStax6fA=", "product"=>{"name"=>"", "price"=>"", "released_on"=>""}, "commit"=>"Create Product"}
+  Rendered products/_form.html.erb (4.3ms)
+  Rendered products/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 207ms (Views: 204.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:23:00 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (4.1506ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"$query"=>{"price"=>{"$lte"=>"40"}}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6390ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"$query"=>{"price"=>{"$lte"=>"40"}}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (1.5724ms)
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.9514ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4842ms)
+  MOPED: 127.12.208.1:27017 UPDATE       database=store_development collection=products selector={"_id"=>"5182c93624fbb67beb000001"} update={"$push"=>{"reviews"=>{"_id"=>"5183ae5a24fbb6c698000001", "content"=>"great!"}}} flags=[] (0.7374ms)
+  MOPED: 127.12.208.1:27017 INSERT       database=store_development collection=products documents=[{"_id"=>"5183aed524fbb6c698000002", "name"=>"Agricola"}] flags=[] (1.5824ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9426ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.8020ms)
+  Rendered products/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 220ms (Views: 219.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/5182c93624fbb67beb000001" for 127.12.208.1 at 2013-05-03 08:35:15 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5182c93624fbb67beb000001"}
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2583ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"_id"=>"5182c93624fbb67beb000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3991ms)
+  Rendered products/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 57.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:35:15 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:35:15 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:35:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:16 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:16 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:35:16 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-03 08:37:59 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4822ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.0149ms)
+  Rendered products/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 603ms (Views: 602.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:00 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:00 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:00 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:00 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/new" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.1ms)
+  Rendered products/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 218ms (Views: 199.5ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:02 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/products" for 127.12.208.1 at 2013-05-03 08:38:27 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tSjFsReSLOJrAPPOrlR7ldUHZy4FpB6VhrXTStax6fA=", "product"=>{"name"=>"ipad", "price"=>"500", "released_on"=>"Oct 13"}, "commit"=>"Create Product"}
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5146ms)
+  MOPED: 127.12.208.1:27017 INSERT       database=store_development collection=products documents=[{"name"=>"ipad", "price"=>"500", "released_on"=>2013-10-13 00:00:00 UTC, "_id"=>"ipad"}] flags=[] (0.1554ms)
+Redirected to http://project-livec9dd3d3c2a15.rhcloud.com/products/ipad
+Completed 302 Found in 534ms
+
+
+Started GET "/products/ipad" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"ipad"}
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6832ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"_id"=>"ipad"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5703ms)
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 111ms (Views: 105.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:28 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9183ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4098ms)
+  Rendered products/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 82ms (Views: 81.6ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (79ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:31 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/products/ipad" for 127.12.208.1 at 2013-05-03 08:38:33 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"ipad"}
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1145ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"_id"=>"ipad"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5689ms)
+  Rendered products/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 168ms (Views: 163.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:34 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:38:34 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:34 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:34 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (73ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:38:34 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/ipad" for 127.12.208.1 at 2013-05-03 08:41:17 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"ipad"}
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (149.0066ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={"_id"=>"ipad"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4795ms)
+  Rendered products/show.html.erb within layouts/application (176.9ms)
+Completed 200 OK in 488ms (Views: 334.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:41:18 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:18 -0400
+Served asset /jquery.js - 304 Not Modified (79ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:41:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:18 -0400
+Served asset /products.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (75ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:41:18 -0400
+Served asset /products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:18 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/products" for 127.12.208.1 at 2013-05-03 08:41:20 -0400
+Processing by ProductsController#index as HTML
+  MOPED: 127.12.208.1:27017 COMMAND      database=admin command={:ismaster=>1} (16.3143ms)
+  MOPED: 127.12.208.1:27017 QUERY        database=store_development collection=products selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6602ms)
+  Rendered products/index.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 176ms (Views: 174.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.208.1 at 2013-05-03 08:41:20 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:20 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:21 -0400
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.208.1 at 2013-05-03 08:41:21 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.12.208.1 at 2013-05-03 08:41:21 -0400
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.12.208.1 at 2013-05-03 08:41:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (163ms)
